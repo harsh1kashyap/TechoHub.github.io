@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>WebMag HTML Template</title>
+    <!-- <link href="//fonts.googleapis.com/css?family=Nunito+Sans:700%7CNunito:300,600" rel="stylesheet"> -->
+    <link rel="stylesheet" href="css/blogpost.css">
+</head>
+
+<body>
+    <header id="header">
+        <div id="nav">
+            <div id="nav-fixed">
+                <div class="container">
+                    <div class="nav-logo">
+                        <a href="index.html" class="logo">
+                            <script data-pagespeed-no-defer>
+                                //<![CDATA[
+                                (function() {
+                                    for (var g = "function" == typeof Object.defineProperties ? Object.defineProperty : function(b, c, a) {
+                                            if (a.get || a.set) throw new TypeError("ES3 does not support getters and setters.");
+                                            b != Array.prototype && b != Object.prototype && (b[c] = a.value)
+                                        }, h = "undefined" != typeof window && window === this ? this : "undefined" != typeof global && null != global ? global : this, k = ["String", "prototype", "repeat"], l = 0; l < k.length - 1; l++) {
+                                        var m = k[l];
+                                        m in h || (h[m] = {});
+                                        h = h[m]
+                                    }
+                                    var n = k[k.length - 1],
+                                        p = h[n],
+                                        q = p ? p : function(b) {
+                                            var c;
+                                            if (null == this) throw new TypeError("The 'this' value for String.prototype.repeat must not be null or undefined");
+                                            c = this + "";
+                                            if (0 > b || 1342177279 < b) throw new RangeError("Invalid count value");
+                                            b |= 0;
+                                            for (var a = ""; b;)
+                                                if (b & 1 && (a += c), b >>>= 1) c += c;
+                                            return a
+                                        };
+                                    q != p && null != q && g(h, n, {
+                                        configurable: !0,
+                                        writable: !0,
+                                        value: q
+                                    });
+                                    var t = this;
+
+                                    function u(b, c) {
+                                        var a = b.split("."),
+                                            d = t;
+                                        a[0] in d || !d.execScript || d.execScript("var " + a[0]);
+                                        for (var e; a.length && (e = a.shift());) a.length || void 0 === c ? d[e] ? d = d[e] : d = d[e] = {} : d[e] = c
+                                    };
+
+                                    function v(b) {
+                                        var c = b.length;
+                                        if (0 < c) {
+                                            for (var a = Array(c), d = 0; d < c; d++) a[d] = b[d];
+                                            return a
+                                        }
+                                        return []
+                                    };
+
+                                    function w(b) {
+                                        var c = window;
+                                        if (c.addEventListener) c.addEventListener("load", b, !1);
+                                        else if (c.attachEvent) c.attachEvent("onload", b);
+                                        else {
+                                            var a = c.onload;
+                                            c.onload = function() {
+                                                b.call(this);
+                                                a && a.call(this)
+                                            }
+                                        }
+                                    };
+                                    var x;
+
+                                    function y(b, c, a, d, e) {
+                                        this.h = b;
+                                        this.j = c;
+                                        this.l = a;
+                                        this.f = e;
+                                        this.g = {
+                                            height: window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight,
+                                            width: window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth
+                                        };
+                                        this.i = d;
+                                        this.b = {};
+                                        this.a = [];
+                                        this.c = {}
+                                    }
+
+                                    function z(b, c) {
+                                        var a, d, e = c.getAttribute("data-pagespeed-url-hash");
+                                        if (a = e && !(e in b.c))
+                                            if (0 >= c.offsetWidth && 0 >= c.offsetHeight) a = !1;
+                                            else {
+                                                d = c.getBoundingClientRect();
+                                                var f = document.body;
+                                                a = d.top + ("pageYOffset" in window ? window.pageYOffset : (document.documentElement || f.parentNode || f).scrollTop);
+                                                d = d.left + ("pageXOffset" in window ? window.pageXOffset : (document.documentElement || f.parentNode || f).scrollLeft);
+                                                f = a.toString() + "," + d;
+                                                b.b.hasOwnProperty(f) ? a = !1 : (b.b[f] = !0, a = a <= b.g.height && d <= b.g.width)
+                                            }
+                                        a && (b.a.push(e),
+                                            b.c[e] = !0)
+                                    }
+                                    y.prototype.checkImageForCriticality = function(b) {
+                                        b.getBoundingClientRect && z(this, b)
+                                    };
+                                    u("pagespeed.CriticalImages.checkImageForCriticality", function(b) {
+                                        x.checkImageForCriticality(b)
+                                    });
+                                    u("pagespeed.CriticalImages.checkCriticalImages", function() {
+                                        A(x)
+                                    });
+
+                                    function A(b) {
+                                        b.b = {};
+                                        for (var c = ["IMG", "INPUT"], a = [], d = 0; d < c.length; ++d) a = a.concat(v(document.getElementsByTagName(c[d])));
+                                        if (a.length && a[0].getBoundingClientRect) {
+                                            for (d = 0; c = a[d]; ++d) z(b, c);
+                                            a = "oh=" + b.l;
+                                            b.f && (a += "&n=" + b.f);
+                                            if (c = !!b.a.length)
+                                                for (a += "&ci=" + encodeURIComponent(b.a[0]), d = 1; d < b.a.length; ++d) {
+                                                    var e = "," + encodeURIComponent(b.a[d]);
+                                                    131072 >= a.length + e.length && (a += e)
+                                                }
+                                            b.i && (e = "&rd=" + encodeURIComponent(JSON.stringify(B())), 131072 >= a.length + e.length && (a += e), c = !0);
+                                            C = a;
+                                            if (c) {
+                                                d = b.h;
+                                                b = b.j;
+                                                var f;
+                                                if (window.XMLHttpRequest) f =
+                                                    new XMLHttpRequest;
+                                                else if (window.ActiveXObject) try {
+                                                    f = new ActiveXObject("Msxml2.XMLHTTP")
+                                                } catch (r) {
+                                                    try {
+                                                        f = new ActiveXObject("Microsoft.XMLHTTP")
+                                                    } catch (D) {}
+                                                }
+                                                f && (f.open("POST", d + (-1 == d.indexOf("?") ? "?" : "&") + "url=" + encodeURIComponent(b)), f.setRequestHeader("Content-Type", "application/x-www-form-urlencoded"), f.send(a))
+                                            }
+                                        }
+                                    }
+
+                                    function B() {
+                                        var b = {},
+                                            c;
+                                        c = document.getElementsByTagName("IMG");
+                                        if (!c.length) return {};
+                                        var a = c[0];
+                                        if (!("naturalWidth" in a && "naturalHeight" in a)) return {};
+                                        for (var d = 0; a = c[d]; ++d) {
+                                            var e = a.getAttribute("data-pagespeed-url-hash");
+                                            e && (!(e in b) && 0 < a.width && 0 < a.height && 0 < a.naturalWidth && 0 < a.naturalHeight || e in b && a.width >= b[e].o && a.height >= b[e].m) && (b[e] = {
+                                                rw: a.width,
+                                                rh: a.height,
+                                                ow: a.naturalWidth,
+                                                oh: a.naturalHeight
+                                            })
+                                        }
+                                        return b
+                                    }
+                                    var C = "";
+                                    u("pagespeed.CriticalImages.getBeaconData", function() {
+                                        return C
+                                    });
+                                    u("pagespeed.CriticalImages.Run", function(b, c, a, d, e, f) {
+                                        var r = new y(b, c, a, e, f);
+                                        x = r;
+                                        d && w(function() {
+                                            window.setTimeout(function() {
+                                                A(r)
+                                            }, 0)
+                                        })
+                                    });
+                                })();
+                                pagespeed.CriticalImages.Run('/mod_pagespeed_beacon', 'https://preview.colorlib.com/theme/webmag/blog-post.html', '-ilGEe-FWC', true, false, '0ZQ_juz17EI');
+                                //]]>
+                            </script><img src="image/img/logo.png" alt="" data-pagespeed-url-hash="785091163" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"></a>
+                    </div>
+                    <ul class="nav-menu nav navbar-nav">
+                        <li><a href="category.html">News</a></li>
+                        <li><a href="category.html">Popular</a></li>
+                        <li class="cat-1"><a href="category.html">Web Design</a></li>
+                        <li class="cat-2"><a href="category.html">JavaScript</a></li>
+                        <li class="cat-3"><a href="category.html">Css</a></li>
+                        <li class="cat-4"><a href="category.html">Jquery</a></li>
+                    </ul>
+                    <div class="nav-btns">
+                        <button class="aside-btn"><i class="fa fa-bars"></i></button>
+                        <button class="search-btn"><i class="fa fa-search"></i></button>
+                        <div class="search-form">
+                            <input class="search-input" type="text" name="search" placeholder="Enter Your Search ...">
+                            <button class="search-close"><i class="fa fa-times"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="nav-aside">
+                <div class="section-row">
+                    <ul class="nav-aside-menu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="#">Join Us</a></li>
+                        <li><a href="#">Advertisement</a></li>
+                        <li><a href="contact.html">Contacts</a></li>
+                    </ul>
+                </div>
+                <div class="section-row">
+                    <h3>Recent Posts</h3>
+                    <div class="post post-widget">
+                        <a class="post-img" href="#"><img src="image/img/xwidget-2.jpg.pagespeed.ic.183VIkUWUH.jpg" alt="" data-pagespeed-url-hash="3900049921" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"></a>
+                        <div class="post-body">
+                            <h3 class="post-title"><a href="#">Pagedraw UI Builder Turns Your Website Design Mockup Into Code Automatically</a></h3>
+                        </div>
+                    </div>
+                    <div class="post post-widget">
+                        <a class="post-img" href="#"><img src="image/img/xwidget-3.jpg.pagespeed.ic.NkT9v3Xk_w.jpg" alt="" data-pagespeed-url-hash="4194549842" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"></a>
+                        <div class="post-body">
+                            <h3 class="post-title"><a href="#">Why Node.js Is The Coolest Kid On The Backend Development Block!</a></h3>
+                        </div>
+                    </div>
+                    <div class="post post-widget">
+                        <a class="post-img" href="#"><img src="image/img/xwidget-4.jpg.pagespeed.ic.KoyoxijWdu.jpg" alt="" data-pagespeed-url-hash="194082467" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"></a>
+                        <div class="post-body">
+                            <h3 class="post-title"><a href="#">Tell-A-Tool: Guide To Web Design And Development Tools</a></h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="section-row">
+                    <h3>Follow us</h3>
+                    <ul class="nav-aside-social">
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                        <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+                    </ul>
+                </div>
+                <button class="nav-aside-close"><i class="fa fa-times"></i></button>
+            </div>
+        </div>
+        <div id="post-header" class="page-header">
+            <div class="background-img" style="background-image: url('image/img/post-page.jpg');"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-10">
+                        <div class="post-meta">
+                            <a class="post-category cat-2" href="category.html">JavaScript</a>
+                            <span class="post-date">March 27, 2018</span>
+                        </div>
+                        <h1>Ask HN: Does Anybody Still Use JQuery?</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="section-row sticky-container">
+                        <div class="main-post">
+                            <h3>Lorem Ipsum: when, and when not to use it</h3>
+                            <p>Never Fear Rejection I’ve been rejected for more jobs than I can count. Oh well! You can’t be a fit for everything and everyone. Stop being afraid of rejection and put yourself out there. With the benefit of hindsight, it may
+                                be that every rejection happened for a reason. – Sahil Bloom </p>
+                            <p>I’ve been involved in a lot of hiring processes. I’m also not afraid to admit I’ve been rejected for more jobs than I can count. But there are proven ways to stand out and win. The 3-part framework: • Foot in the Door • Nail
+                                the Interview • Close the Deal Let’s dive in:</p>
+                            <figure class="figure-img">
+                                <img class="img-responsive" src="image/img/post/post_4.jpg" alt="" data-pagespeed-url-hash="950850851" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                                <figcaption>So Lorem Ipsum is bad (not necessarily)</figcaption>
+                            </figure>
+                            <p>Part 1: Foot in the Door The hiring process is ultra-competitive. There always seems to be an overabundance of candidates applying for the same highly sought-after roles. You can’t land the job if they won’t even give you a
+                                chance. 5 methods to get your foot in the door:</p>
+                            <p>Find a Side Door Warm intros and references are the holy grail of a competitive hiring process. They are even more powerful if they come from an existing employee. Scan your networks for any connections to a company. If you
+                                find any, ask. No shame—we’ve all been there!</p>
+                            <p>Create Value Before Applying Do research on key projects of the role you are applying for. Find a way to create value prior to even applying. Examples: • Build a web mockup • Survey a few customers • Write a short memo Include
+                                it when you apply—you’ll quickly stand out.</p>
+                            <blockquote class="blockquote">
+                                Interact on Social Channels In the digital age, there are endless ways to interact with your target company. Follow them on social media, like their posts, comment, etc. Don’t be spammy, but let them know you exist. This works particularly well with startups/small
+                                companies.
+                            </blockquote>
+                            <p>Cover Letter & Resume A punchy cover letter and tailored resume can really help you stand out. Cover Letter: Keep it short and include a specific answer to the “why us?” question. Infuse an element of personality. Resume: Custom
+                                tailored to the company and role.</h3>
+                                <p>Typographers of yore didn't come up with the concept of dummy copy because people thought that content is inconsequential window dressing, only there to be used by designers who can’t be bothered to read. Lorem Ipsum is
+                                    needed because words matter, a lot. Just fill up a page with draft copy about the client’s business and they will actually read it and comment on it. They will be drawn to it, fiercely. Do it the wrong way and draft
+                                    copy can derail your design review.</p>
+                        </div>
+                        <div class="post-shares sticky-shares">
+                            <a href="#" class="share-facebook"><i class="fa fa-facebook"></i></a>
+                            <a href="#" class="share-twitter"><i class="fa fa-twitter"></i></a>
+                            <a href="#" class="share-google-plus"><i class="fa fa-instagram"></i></a>
+                            <a href="#" class="share-linkedin"><i class="fa fa-linkedin"></i></a>
+                            <a href="#"><i class="fa fa-envelope"></i></a>
+                        </div>
+                    </div>
+                    <div class="section-row text-center">
+                        <a href="#" style="display: inline-block;margin: auto;">
+                            <img class="img-responsive" src="image/img/xad-2.jpg.pagespeed.ic.bUoDgOb5IT.jpg" alt="" data-pagespeed-url-hash="520125700" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                        </a>
+                    </div>
+                    <div class="section-row">
+                        <div class="post-author">
+                            <div class="media">
+                                <div class="media-left">
+                                    <img class="media-object" src="image/img/author.png" alt="" data-pagespeed-url-hash="2096537711" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                                </div>
+                                <div class="media-body">
+                                    <div class="media-heading">
+                                        <h3>John Doe</h3>
+                                    </div>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                        consequat.
+                                    </p>
+                                    <ul class="author-social">
+                                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section-row">
+                        <div class="section-title">
+                            <h2>3 Comments</h2>
+                        </div>
+                        <div class="post-comments">
+                            <div class="media">
+                                <div class="media-left">
+                                    <img class="media-object" src="image/img/author.png" alt="" data-pagespeed-url-hash="1889391393" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                                </div>
+                                <div class="media-body">
+                                    <div class="media-heading">
+                                        <h4>John Doe</h4>
+                                        <span class="time">March 27, 2018 at 8:00 am</span>
+                                        <a href="#" class="reply">Reply</a>
+                                    </div>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                        consequat.
+                                    </p>
+                                    <div class="media">
+                                        <div class="media-left">
+                                            <img class="media-object" src="image/img/avatar.png" alt="" data-pagespeed-url-hash="1889391393" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                                        </div>
+                                        <div class="media-body">
+                                            <div class="media-heading">
+                                                <h4>John Doe</h4>
+                                                <span class="time">March 27, 2018 at 8:00 am</span>
+                                                <a href="#" class="reply">Reply</a>
+                                            </div>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                                                ex ea commodo consequat.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="media">
+                                <div class="media-left">
+                                    <img class="media-object" src="image/img/avatar.png" alt="" data-pagespeed-url-hash="1889391393" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                                </div>
+                                <div class="media-body">
+                                    <div class="media-heading">
+                                        <h4>John Doe</h4>
+                                        <span class="time">March 27, 2018 at 8:00 am</span>
+                                        <a href="#" class="reply">Reply</a>
+                                    </div>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                        consequat.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section-row">
+                        <div class="section-title">
+                            <h2>Leave a reply</h2>
+                            <p>your email address will not be published. required fields are marked *</p>
+                        </div>
+                        <form class="post-reply">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <span>Name *</span>
+                                        <input class="input" type="text" name="name">
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <span>Email *</span>
+                                        <input class="input" type="email" name="email">
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <span>Website</span>
+                                        <input class="input" type="text" name="website">
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <textarea class="input" name="message" placeholder="Message"></textarea>
+                                    </div>
+                                    <button class="primary-button">Submit</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="aside-widget text-center">
+                        <a href="#" style="display: inline-block;margin: auto;">
+                            <img class="img-responsive" src="image/img/xad-1.jpg.pagespeed.ic.C1dNWPxojd.jpg" alt="" data-pagespeed-url-hash="225625779" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+                        </a>
+                    </div>
+                    <div class="aside-widget">
+                        <div class="section-title">
+                            <h2>Most Read</h2>
+                        </div>
+                        <div class="post post-widget">
+                            <a class="post-img" href="#"><img src="image/img/xwidget-1.jpg.pagespeed.ic.nqEkEDP2_z.jpg" alt="" data-pagespeed-url-hash="3605550000" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"></a>
+                            <div class="post-body">
+                                <h3 class="post-title"><a href="#">Tell-A-Tool: Guide To Web Design And Development Tools</a></h3>
+                            </div>
+                        </div>
+                        <div class="post post-widget">
+                            <a class="post-img" href="#"><img src="image/img/xwidget-2.jpg.pagespeed.ic.183VIkUWUH.jpg" alt="" data-pagespeed-url-hash="3900049921" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"></a>
+                            <div class="post-body">
+                                <h3 class="post-title"><a href="#">Pagedraw UI Builder Turns Your Website Design Mockup Into Code Automatically</a></h3>
+                            </div>
+                        </div>
+                        <div class="post post-widget">
+                            <a class="post-img" href="#"><img src="image/img/xwidget-3.jpg.pagespeed.ic.NkT9v3Xk_w.jpg" alt="" data-pagespeed-url-hash="4194549842" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"></a>
+                            <div class="post-body">
+                                <h3 class="post-title"><a href="#">Why Node.js Is The Coolest Kid On The Backend Development Block!</a></h3>
+                            </div>
+                        </div>
+                        <div class="post post-widget">
+                            <a class="post-img" href="#"><img src="image/img/xwidget-4.jpg.pagespeed.ic.KoyoxijWdu.jpg" alt="" data-pagespeed-url-hash="194082467" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"></a>
+                            <div class="post-body">
+                                <h3 class="post-title"><a href="#">Tell-A-Tool: Guide To Web Design And Development Tools</a></h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="aside-widget">
+                        <div class="section-title">
+                            <h2>Featured Posts</h2>
+                        </div>
+                        <div class="post post-thumb">
+                            <a class="post-img" href="#"><img src="image/img/xpost-2.jpg.pagespeed.ic.TYs1GPrTN5.jpg" alt="" data-pagespeed-url-hash="361851009" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"></a>
+                            <div class="post-body">
+                                <div class="post-meta">
+                                    <a class="post-category cat-3" href="#">Jquery</a>
+                                    <span class="post-date">March 27, 2018</span>
+                                </div>
+                                <h3 class="post-title"><a href="#">Ask HN: Does Anybody Still Use JQuery?</a></h3>
+                            </div>
+                        </div>
+                        <div class="post post-thumb">
+                            <a class="post-img" href="#"><img src="image/img/xpost-1.jpg.pagespeed.ic.A4Rpahx6U5.jpg" alt="" data-pagespeed-url-hash="67351088" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"></a>
+                            <div class="post-body">
+                                <div class="post-meta">
+                                    <a class="post-category cat-2" href="#">JavaScript</a>
+                                    <span class="post-date">March 27, 2018</span>
+                                </div>
+                                <h3 class="post-title"><a href="#">Chrome Extension Protects Against JavaScript-Based CPU Side-Channel Attacks</a></h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="aside-widget">
+                        <div class="section-title">
+                            <h2>Catagories</h2>
+                        </div>
+                        <div class="category-widget">
+                            <ul>
+                                <li><a href="#" class="cat-1">Web Design<span>340</span></a></li>
+                                <li><a href="#" class="cat-2">JavaScript<span>74</span></a></li>
+                                <li><a href="#" class="cat-4">JQuery<span>41</span></a></li>
+                                <li><a href="#" class="cat-3">CSS<span>35</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="aside-widget">
+                        <div class="tags-widget">
+                            <ul>
+                                <li><a href="#">Chrome</a></li>
+                                <li><a href="#">CSS</a></li>
+                                <li><a href="#">Tutorial</a></li>
+                                <li><a href="#">Backend</a></li>
+                                <li><a href="#">JQuery</a></li>
+                                <li><a href="#">Design</a></li>
+                                <li><a href="#">Development</a></li>
+                                <li><a href="#">JavaScript</a></li>
+                                <li><a href="#">Website</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="aside-widget">
+                        <div class="section-title">
+                            <h2>Archive</h2>
+                        </div>
+                        <div class="archive-widget">
+                            <ul>
+                                <li><a href="#">January 2018</a></li>
+                                <li><a href="#">Febuary 2018</a></li>
+                                <li><a href="#">March 2018</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5">
+                    <div class="footer-widget">
+                        <div class="footer-logo">
+                            <a href="index.html" class="logo"><img src="image/img/logo.png" style="height: 100px; width: 150px;" alt="" data-pagespeed-url-hash="785091163" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"></a>
+                        </div>
+                        <ul class="footer-nav">
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Advertisement</a></li>
+                        </ul>
+                        <div class="footer-copyright">
+                            <span>&copy; Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="index.html" target="_blank">Techo Hub</a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="footer-widget">
+                                <h3 class="footer-title">About Us</h3>
+                                <ul class="footer-links">
+                                    <li><a href="about.html">About Us</a></li>
+                                    <li><a href="#">Join Us</a></li>
+                                    <li><a href="contact.html">Contacts</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="footer-widget">
+                                <h3 class="footer-title">Catagories</h3>
+                                <ul class="footer-links">
+                                    <li><a href="category.html">Web Design</a></li>
+                                    <li><a href="category.html">JavaScript</a></li>
+                                    <li><a href="category.html">Css</a></li>
+                                    <li><a href="category.html">Jquery</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="footer-widget">
+                        <h3 class="footer-title">Join our Newsletter</h3>
+                        <div class="footer-newsletter">
+                            <form>
+                                <input class="input" type="email" name="newsletter" placeholder="Enter your email">
+                                <button class="newsletter-btn"><i class="fa fa-paper-plane"></i></button>
+                            </form>
+                        </div>
+                        <ul class="footer-social">
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                            <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js_main.js.pagespeed.jc.XwDhaBFLFp.js"></script>
+    <script>
+        eval(mod_pagespeed_15hy7ra_pu);
+    </script>
+    <script>
+        eval(mod_pagespeed_RDDE5qW6SI);
+    </script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+    <script>
+        window.dataLayer = window.dataLayer || []; 
+        function gtag() {
+            dataLayer.push(arguments);
+        } 
+        gtag('js', new Date()); 
+        gtag('config', 'UA-23581568-13');
+    </script>
+    <script defer src="js/beacon.min.js" data-cf-beacon='{"rayId":"6b417a918c97d157","token":"cd0b4b3a733644fc843ef0b185f98241","version":"2021.11.0","si":100}'></script>
+</body>
+
+</html>
